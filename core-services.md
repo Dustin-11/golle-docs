@@ -126,15 +126,14 @@ Response:
 }
 ```
 
-2. **Get A Ride Request**
-   GET `/golle/ride-request`
+2. **Get A Ride Request** GET `/golle/ride-request/:rideId`
 
-```json
-{
-    "rideId": "d6733304-0c05-4786-ab2e-16efb9a061ef"
-}
-```
+    Path Parameter: `rideId` (string, UUID) – The ID of the ride request to retrieve
 
+Example Request:
+```bash
+GET /golle/ride-request/d6733304-0c05-4786-ab2e-16efb9a061ef
+```  
 Response:
 
 * 200 OK - Ride Request Found
@@ -173,15 +172,14 @@ Response:
 }
 ```
 
-3. **Delete Ride Request**
-   DELETE `/golle/ride-request`
+3. **Delete Ride Request** DELETE `/golle/ride-request/:rideId`
 
-```json
-{
-    "rideId": "c93563df-f55a-44b2-8054-191870b598c7"
-}
-```
+    Path Parameter: `rideId` (string, UUID) – The ID of the ride request to delete
 
+Example Request:
+```bash
+DELETE /golle/ride-request/d6733304-0c05-4786-ab2e-16efb9a061ef
+```  
 Response:
 
 * 200 OK - Ride Request Deleted
